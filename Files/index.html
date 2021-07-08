@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: grey;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam</title>
+    <h1 style="text-align: center;font-size: 48px;">Sam Says Sweet Sounds</h1>
+</head>
+<style>
+    .container {
+      height: 200px;
+      position: relative;
+      border: 3px solid green;
+    }
+    
+    .center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+</style>
+<body style="border-style: solid;border-color: white;color:white;background-image: url('bg.jpg');background-size: cover;">
+    
+    <p style="text-align: center;font-size: 20px;">
+        <img src="ai.png" style="width:366px;height:216px;"><br>
+        Is there something that you'd like to know? <br>
+        Sam is a cutting edge AI bot that can answer any question that you might have.<br>
+        But first you have to implore with Sam before asking your question.<br>
+        Be cautious, Sam can feel your energy & makes it's own decisions based on it.<br>
+    </p>
+    <p style="text-align: center;font-size: 30px;">
+        Implore : <input type="text" style="font-size: 20px;width: 500px;caret-color: transparent;" id="implore" readonly> <br>
+        Question : <input type="text" style="font-size: 20px;width: 500px;caret-color: transparent;" id="question"> <br> <br>
+        <input type="button" name="ask" value="Ask" style="font-size: 25px;width: 100px;height: 40px;" onclick="ask()">
+        <input type="button" name="reset" value="Reset" style="font-size: 25px;width: 100px;height: 40px;" onclick="reset()">
+        <br>
+        <text style="text-align: center;font-size: 20px;">How do you implore with Sam? Using "Sam says sweet sounds" <br>Or "Sam says sweet sounds sung so softly" work the best But please be compassionate.</text>
+        <br>
+        <textarea style="font-size: 25px;width: 750px;height: 60px;text-align:center;" id="ans" readonly></textarea>
+        <br>
+        <br>
+    </p>
+    <script src="script.js"></script>
+</body>
+</html>
